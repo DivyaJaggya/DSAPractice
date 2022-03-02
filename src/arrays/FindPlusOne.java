@@ -1,39 +1,32 @@
 package arrays;
 
-//https://leetcode.com/problems/missing-number/
+//https://leetcode.com/problems/plus-one/
+
+import java.util.Arrays;
+
+import static arrays.FindDuplicateNumber.duplicateNumber;
 
 public class FindPlusOne {
-	 public static int duplicateNumber(int[] nums) {
-         for(int i=0;i<nums.length;i++){
-             while(nums[i]<=nums.length && nums[nums[i]-1]!=nums[i]){
-                 //swap the numbers
-                 swap(nums, i, nums[i]-1);
-             }
-         }
-         for(int i=0;i<nums.length;i++){
-             if(nums[i]!=i+1 && nums[nums[i]-1]==nums[i]){
-                 return nums[i];
-             }
-         }
-         return 0;
-     }
-  public static void swap(int[]nums, int i, int j){
-      if(i==j){
-          return;
-      }
-      /*nums[i] = nums[i]^nums[j];
-      nums[j] = nums[i]^nums[j];
-      nums[i] = nums[i]^nums[j];*/
-      nums[i] = nums[i]+nums[j];
-      nums[j] = nums[i]-nums[j];
-      nums[i] = nums[i]-nums[j];
-  }
+    public static int[] plusOne(int[] digits) {
+        if(digits.length==0)
+            return digits;
+        for(int i=digits.length-1;i>=0;i--){
+            if(digits[i]<9){
+                digits[i]++;
+                return digits;
+            }
+            digits[i]=0;
+        }
+        int[] newDigit = new int[digits.length + 1];
+        newDigit[0]=1;
+        return newDigit;
+    }
   
   public static void main(String[] args) {
 	  
-	  int[] array= new int[] {4,2,3,1,4};
-	 // int missingNum=duplicateNumber(array);
-      System.out.println("Duplicate Number is : " + 5 /10);
+	  int[] array= new int[] {9,9,9,9,9,9,9,9,9,9,8};
+	  int[] plusOneArray=plusOne(array);
+      System.out.println("Plus One array is  : " + Arrays.toString(plusOneArray));
   }
 
 }

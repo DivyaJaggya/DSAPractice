@@ -1,6 +1,6 @@
 package arrays;
 
-//https://leetcode.com/problems/missing-number/
+//https://leetcode.com/problems/find-the-duplicate-number/
 
 public class FindDuplicateNumber {
 	 public static int duplicateNumber(int[] nums) {
