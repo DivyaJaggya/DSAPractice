@@ -2,11 +2,10 @@ package arrays;
 
 //https://leetcode.com/problems/two-sum/
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Find2Sum {
+public class Find2SumForUnsortedArray {
     public static int[] twoSum(int[] nums, int target) {
 
         int[] sumNum = new int[2];
