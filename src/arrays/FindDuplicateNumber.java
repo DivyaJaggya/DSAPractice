@@ -32,8 +32,8 @@ public class FindDuplicateNumber {
   public static void main(String[] args) {
 	  
 	  int[] array= new int[] {4,2,3,1,4};
-	  int missingNum=duplicateNumber(array);
-      System.out.println("Duplicate Number is : " + missingNum);
+	  int duplicateNum=duplicateNumber(array);
+      System.out.println("Duplicate Number is : " + duplicateNum);
   }
 
 }
