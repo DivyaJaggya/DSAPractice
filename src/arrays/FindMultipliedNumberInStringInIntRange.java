@@ -1,8 +1,8 @@
 package arrays;
 
-//https://leetcode.com/problems/multiply-strings/
+//Just to multiply 2 numbers in range of Integer
 
-public class FindMultipliedNumberInString {
+public class FindMultipliedNumberInStringInIntRange {
     public static String multiply(String num1, String num2) {
         int number1=0;
         int number2=0;
