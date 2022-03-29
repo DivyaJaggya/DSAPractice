@@ -4,8 +4,6 @@ package arrays;
 
 import java.util.Arrays;
 
-import static arrays.FindDuplicateNumber.duplicateNumber;
-
 public class FindPlusOne {
     public static int[] plusOne(int[] digits) {
         if(digits.length==0)

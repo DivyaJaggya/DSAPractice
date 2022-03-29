@@ -31,7 +31,7 @@ public class Find2SumWhenArraySorted {
 
     public static void main(String[] args) {
         int[] array= new int[] {3,3,7,4,6,0,3,5};
-        int[] twoSumNum=twoSum(array,5);
+        int[] twoSumNum=twoSum(array,6);
         System.out.println("Two Sum Numbers are at place : " + twoSumNum[0] + " " + twoSumNum[1]);
     }
 }

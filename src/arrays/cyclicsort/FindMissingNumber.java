@@ -1,4 +1,4 @@
-package arrays;
+package arrays.cyclicsort;
 
 //https://leetcode.com/problems/missing-number/
 
