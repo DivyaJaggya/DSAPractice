@@ -19,3 +19,5 @@ https://leetcode.com/problems/container-with-most-water/
 
 https://leetcode.com/problems/3sum/
 
+https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+
