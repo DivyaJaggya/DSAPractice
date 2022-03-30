@@ -2,9 +2,6 @@ package arrays;
 
 //https://leetcode.com/problems/container-with-most-water/
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class FindMaxAreaFromContainerHeight {
     public static int maxArea(int[] height) {
         int maxArea=0;
